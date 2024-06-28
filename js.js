@@ -82,10 +82,8 @@ function hamburguer(){
     if(aside.style.width == "0px" || aside.style.width == ""){
         aside.style.width = "100vw"
         ul.style.display = "inline"
-        artigo.style.width = "0vw"
     }else{
         aside.style.width = "0px"
         ul.style.display = "none"
-        artigo.style.width = "100vw"
     }
 }
