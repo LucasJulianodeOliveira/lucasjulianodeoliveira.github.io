@@ -3,8 +3,7 @@
 
 body{
   width: 100vh;
-  height: 100%;
-  overflow-x: hidden;
+  height: 100vw;
   display: flex;
   flex-direction: column;
   font-family: "Indie Flower", cursive;
@@ -44,6 +43,7 @@ aside{
   justify-content: space-around;
   justify-items: center;
   z-index: 0;
+  overflow-x: hidden;
 }
 
 .eu{
@@ -303,6 +303,11 @@ button img{
   height: 80px;
 }
 @media screen and (max-width: 415px){
+  body{
+    height: 100vw;
+    width: -webkit-fill-available;
+  }
+
   aside{
     position: fixed;
     width: 0px;
@@ -310,6 +315,7 @@ button img{
     transition: 0.5s ease-in-out;
     box-shadow: none;
   }
+
 
   ul{
     display: none;
